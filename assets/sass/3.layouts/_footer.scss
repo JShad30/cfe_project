@@ -1,0 +1,20 @@
+.footer {
+    .footer-top {
+        background-color: #000000;
+        height: 120px;
+        @include flex(row, center, center, no-wrap);  
+        img {
+            height: 60px;
+            width: auto;
+        }      
+    }
+    .footer-bottom {
+        height: 40px;
+        background-color: #182629;
+        @include flex(row, center, center, no-wrap);
+        span {
+            color: #ffffff;
+            font-size: 0.8em;
+        }
+    }
+}
