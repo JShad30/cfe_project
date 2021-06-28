@@ -156,106 +156,6 @@
   font-size: 0.8em;
 }
 
-/*@import '../2.mixins/mixins';
-
-.navbar {
-    position: fixed;
-    width: $full-width;
-    height: 80px;
-    background-color: #000000;
-    opacity: 0.8;
-    z-index: 10;
-    @include flex(row, center, center, no-wrap);
-    .navbar-container {
-        @include flex(row, space-between, center, no-wrap);
-        width: $container-width;
-        max-width: $container-max-width;
-        .navbar-top {
-            width: $full-width;
-            @include flex(row, space-between, center, no-wrap);
-            a {
-                img {
-                    height: 60px;
-                    width: auto;
-                }
-            }
-            .nav-button {
-                @media (min-width: 768px){
-                    display: none;
-                }                
-                .lines {
-                    height: 40px;
-                    padding: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    cursor: pointer;
-                    .line {
-                        height: 2px;
-                        width: 20px;
-                        border-radius: 1.5px;
-                        background-color: #fafafa;
-                    }
-                }    
-            }
-            .nav-button.active {
-                display: none;
-            }                         
-        } 
-        .links-list {
-            display: none;
-            list-style-type: none;
-            @media (min-width: 768px) {
-                @include flex(row, flex-end, center, no-wrap);
-            }
-            li {
-                text-transform: uppercase;
-                margin-left: 20px;
-                a {
-                    text-decoration: none;
-                    color: #ffffff;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.mobile-links.active {
-    right: 0;
-} 
-
-/*.nav-cross {
-    @media (min-width: 768px){
-        display: none;
-    }
-    display: none;
-    .cross-lines {
-        top: 0;
-        padding-right: 10px;
-        cursor: pointer;
-    }
-}   
-.nav-cross.active {
-    width: 60px;
-    height: 30px;
-    padding: 10px;
-    cursor: pointer;
-    display: contents;
-    .cross-lines {
-        #cross-line-one {
-            transform: rotate(45deg);
-            position: absolute;
-        }
-
-        #cross-line-two {
-            transform: rotate(135deg);
-        }
-    }                
-}*/
-/*---------- Navbar ----------*/
 .navbar {
   top: 0;
   position: fixed;
@@ -339,38 +239,8 @@
   text-decoration: underline;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-}
-
-.button {
-  margin: 10px;
-  width: 100px;
-  height: 30px;
-  border-radius: 15px;
-}
-
-.button a {
-  height: inherit;
-  width: inherit;
-  font-size: 0.8em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #fafafa;
-  border-radius: 15px;
-}
-
 .links {
   display: flex;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  font-size: 1.2em;
 }
 
 .nav-button {
@@ -456,12 +326,6 @@
     align-items: center;
   }
 
-  .top-section {
-    background-size: 120px;
-    background-position-x: 92%;
-    background-position-y: 10%;
-  }
-
   .links {
     display: block;
     margin: 0;
@@ -485,15 +349,6 @@
     align-items: center;
   }
 
-  .telephone {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-down-arrow {
-    color: #ff5d22;
-  }
-
   .list-item a {
     text-decoration: none;
     color: #fafafa;
@@ -503,69 +358,8 @@
     text-decoration: underline;
   }
 
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-  }
-
-  .button {
-    margin: 10px;
-    width: 100px;
-    height: 30px;
-    border-radius: 15px;
-  }
-
-  .button a {
-    height: inherit;
-    width: inherit;
-    font-size: 0.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fafafa;
-    border-radius: 15px;
-  }
-
   .links {
     display: flex;
-  }
-
-  .search {
-    display: flex;
-  }
-
-  .search-bar {
-    width: 80px;
-    background-color: #373e48;
-    border: 0;
-    border-bottom: 2px solid #eaefe9;
-    margin: 20px 10px;
-    padding: 5px 5px 0 5px;
-    color: #ffffff;
-  }
-
-  .telephone {
-    display: flex;
-  }
-
-  .telephone-image {
-    height: 1.8em;
-    width: 1.8em;
-    padding-right: 10px;
-  }
-
-  .telephone-number {
-    display: none;
-  }
-
-  .telephone:hover a {
-    text-decoration: underline;
-  }
-
-  .button:hover a {
-    text-decoration: underline;
   }
 
   .nav-button.active {
