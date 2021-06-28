@@ -12,8 +12,8 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-top">             
-                <a href="#"><img src="assets/images/logo.png" id="navbar-logo-image"></a>
-                <div class="nav-button" id="nav-button">
+                <a href="#"><img src="assets/images/logo.png" id="navbar-logo-image" height="65px" width="auto"></a>
+                <div class="nav-button active" id="nav-button">
                     <div class="lines active">
                         <div class="line" id="line-one"></div>
                         <div class="line" id="line-two"></div>
@@ -27,11 +27,17 @@
                     </div>
                 </div>
             </div>
-            <ul class="links-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Beers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul> 
+            <div class="navbar-content" id="navbar-content-section">
+                <div class="navbar-content-container">
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="list-item"><a href="#">Home</a></li>
+                            <li class="list-item"><a href="#">Beers</a></li>
+                            <li class="list-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>                    
+                </div>   
+            </div>     
         </div>       
     </nav>
 
@@ -47,7 +53,6 @@
     <section class="beers-section">
         <div class="container beer-section-container">
             <div class="beers-section-top"></div>         
-            <div class="load-more-button" id="loadMoreButton">Load More Beers</div>
         </div>   
     </section>
 
