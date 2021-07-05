@@ -6,6 +6,7 @@
     height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     @include flex(row, center, center, no-wrap);
     @media (min-width: 768px) {
         height: 80vh;

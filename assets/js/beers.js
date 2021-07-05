@@ -1,5 +1,4 @@
 const beerContainer = document.querySelector(".beers-section-top");
-const loadMoreButton = document.getElementById('loadMoreButton');
 
 function loadBeers() {
     fetch('http://api.punkapi.com/v2/beers')
@@ -20,7 +19,7 @@ function loadBeers() {
                     "<h3 class='beer-title'>" + beerName + "</h3>" +
                     "<p class='beer-paragraph'>" + beerDesc + "</p>" +
                     "</div>" +
-                    "<div class='beer-image-container' onclick='fullHeart();'><img src='assets/images/heart-thin-32.png' class='heart-thin' id='beerId" + beerId + "'><img class='beer-image' src='" + beerImg + "'></div>" +
+                    "<div class='beer-image-container' onclick='fullHeart(beerId" + beerId + ");'><img src='assets/images/heart-thin-32.png' class='heart-thin' id='beerId" + beerId + "'><img class='beer-image' src='" + beerImg + "'></div>" +
                     "</div>"                
             }            
         }   
